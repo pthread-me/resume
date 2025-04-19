@@ -1,0 +1,250 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{4.1pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{
+\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Anas Alhadi} \\ \vspace{1pt}
+		\small (902)-329-9923 $|$ \label{contact_info}\href{mailto:Alhadi@dal.ca}{\underline{Alhadi@dal.ca}} $|$ 
+    \href{https://linkedin.com/in/anas-alhadi}{\underline{Linkedin}}
+$|$ 
+    \href{https://github.com/pthread-me}{\underline{GitHub}}
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dalhousie University}{Halifax, NS}
+      {Bachelor of Computer Science with Honours - GPA: 4.09/4.3}
+      {Jan. 2021 -- May. 2025}
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+	\resumeSubheading
+      {research Assistant}{April. 2024 -- May. 2025  }
+      {Dalhousie University}{Halifax, NS}
+      \resumeItemListStart
+        \resumeItem{Worked under Dr. Samer Lahoud, an IoT networking expert on improving\\ metadata compression in IoT packets.}
+        \resumeItem{Developed the ability to efficiently grasp the contents of Documentation, RFC standards\\ and research papers.}
+      \resumeItemListEnd 
+
+
+    \resumeSubheading
+		{Undergraduate Teaching Assistant}{Aug. 2023 -- Dec. 2024 }
+      {Dalhousie University}{Halifax, NS}
+      \resumeItemListStart
+        \resumeItem{Managed 400+ Git repositories incorporating the use of bash scripts in the process.}
+        \resumeItem{Instructed on Systems topics including  C programming, basic Computer Architecture and UNIX operations.}
+        \resumeItem{Provided in-person guidance to students, ensuring clarity and comprehensiveness.}
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+
+
+
+
+
+\section{Projects}
+    \resumeSubHeadingListStart
+
+	
+	  \resumeProjectHeading
+		{\textbf{KeBaB} $|$ \emph{C++}}{Aug. 2024 -- Present}
+			\resumeItemListStart
+			\resumeItem{\underline{Paper Title:} K-mer based breaking for finding SMEMs.
+			\hfill \makebox[40pt][r]{ 
+		\href{https://arxiv.org/abs/2502.20338}{\underline{Paper}}  
+		 \hspace{10pt} \href{https://github.com/SuchithSridhar/Compact-DNA-Data-Structures}{\underline{Code}}
+		}}
+        
+
+					\resumeItem{Collaborated with experts to implement improved algorithms used in the identification of \\ certain patterns 
+						in the human genome.}
+            \resumeItem{Assisted in the Testing and Debugging of a relativley large code base.}
+						\resumeItem{Evaluated the performance of our implementation.}
+					\resumeItemListEnd
+
+		\resumeProjectHeading
+		{\textbf{Dynamic Context Updating in SCHC} $|$ \emph{Python3}}{Jan. 2025 -- Present}
+          \resumeItemListStart
+					\resumeItem{\underline{Thesis Title:} Dynamic Context Updating in SCHC.
+			\hfill \makebox[40pt][r]{ 
+		\href{https://github.com/pthread-me/Dynamic-Context-Update-SCHC/blob/main/Thesis.pdf}{\underline{Paper}} 
+			\hspace{10pt} \href{https://github.com/pthread-me/Dynamic-Context-Update-SCHC}{\underline{Code}} 
+		}}
+       
+
+						\resumeItem{Completed and Defended a study on a novel, dynamic rule updating algorithm for \\an IoT based compression protocol (SCHC). }
+            \resumeItem{Built a prototype of the implementation for the updating algorithm.}
+            \resumeItem{Built an emulation testbed that was used to evaluate the performance of said algorithm.}
+          \resumeItemListEnd
+
+
+			\resumeProjectHeading
+          {\textbf{Advanced Data Structures} $|$ \emph{GoLang, Python3}}{Aug. 2023 -- April. 2024}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a classmate to implement and analyze non trivial data structures.
+      	\hfill \makebox[40pt][r]{ 
+			\hyperref[contact_info]{\underline{Contact}}  \hspace{10pt} \href{https://github.com/HamzaWahed/trees}{\underline{Code}}}} 
+      
+						\resumeItem{Implemented: Splay Trees, Van Emde Boas trees.}
+            \resumeItem{Evaluated performance by stress testing the Data structures and compared results \\against the theoretical limits.}
+
+						\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Java, Python3, MySQL, GoLang, JavaScript} \\
+     \textbf{Developer Tools}{: Scapy, Git, Docker, WireShark, Makefile, GDB, RiotOS } \\
+     \textbf{Frameworks:}{: Flask, Espresso, JUnit, Nodejs} \\
+     \textbf{Markup Languages}{: LaTeX, Markdown, HTML, CSS}
+    }}
+ \end{itemize}
+
+\section{Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     
+     \textbf{Sexton Scholar:}{ Awarded each semester to students with a 3.85 or higher GPA on a full course load, achieved 6 times.}
+    
+    \textbf{Dean's List:}{ Awarded each semester to students with a term GPA between 3.4 and 3.84 while on a full course load, achieved twice.}
+    
+    \textbf{Oman MoHE Scholarship:}{ Awarded to the top performing highschool students in the country, includes 4 years of paid university tuition.}
+    }}
+ \end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
+
