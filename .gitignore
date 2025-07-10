@@ -6,3 +6,5 @@
 !*.tex
 !.gitignore
 !letter/
+!v1/
+!v2/

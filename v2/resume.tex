@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{4.1pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+			\textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{
+\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Anas Alhadi} \\ \vspace{1pt}
+		\small (902)-329-9923 $|$ \label{contact_info}\href{mailto:anas.n.alhadi@outlook.com}{\underline{Email}} $|$ 
+    \href{https://linkedin.com/in/anas-alhadi}{\underline{Linkedin}}
+$|$ 
+    \href{https://github.com/pthread-me}{\underline{GitHub}}
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dalhousie University}{Jan. 2021 -- May. 2025}
+      {Bachelor's in Computer Science - First Class Honours - GPA: 4.1/4.3}
+      {Halifax, NS}
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+	\resumeSubheading
+      {Dalhousie University - Research Assistant}{Halifax, NS}
+      {Succinct Data Structures - KeBaB (\href{https://arxiv.org/abs/2502.20338}{\underline{Paper}}, \href{https://github.com/SuchithSridhar/Compact-DNA-Data-Structures}{\underline{Code}})
+}{Sep. 2024 -- May. 2025}
+      \resumeItemListStart
+        \resumeItem{Developed the main program logic of an improved string matching algorithm (KeBaB) for finding maximum exact
+					matches between a patient's DNA sequence and a large DNA dataset. The algorithm combines multiple data processing techniques such as
+					hashing sections of the string and the use of probabilistic datastructures to skip over sections that are guarenteed to not match, thus saving 
+					CPU cycles. These optimizations resulted in a minimum of 50\% speed up compared to the current industry standard.
+				}
+        \resumeItem{Built an internal testing and profiling suite using python scripts in conjunction with CPU profiling tools to analyse both correctness
+					and performace costs of all changes performed by the development team. The suite performs unit testing of specific functions against hand verified results, as
+			well as large scale integration tests against the output of industry level algorithms. Thus allowing researchers to focus more on performace while providing immediate feedback on the effect of their changes.}
+				\resumeItem{Assisted teammates in the debugging process by hosting pair programming sessions involving a step by step verification of the program state often at the bit level. A process
+				that resulted in the uncovering of extremely rare bugs, thus significantly improving the 
+			robustness and corectness of our algorithm.}
+      \resumeItemListEnd 
+
+	\vspace{-12pt}
+  \resumeSubheading
+		{}{}
+      {IoT Network Compression - Dynamic Rule Updating (\href{https://github.com/pthread-me/Dynamic-Context-Update-SCHC/blob/main/Thesis.pdf}{\underline{Paper}}, \href{https://github.com/pthread-me/Dynamic-Context-Update-SCHC}{\underline{Code}})}{Apr. 2024 -- May. 2025}
+      \resumeItemListStart
+				\resumeItem{Designed a novel rule updating algorithm that integrates CPU scheduling techniques into the
+				SCHC compression protocol as a way to manage compression rules, thus allowing the protocol to adapt to changing network enviroments, 
+				improving both compression ratioes with packets seeing a size decrease by up to 20\% as well as making SCHC viable for use in mobile
+				IoT networks.}
+				\resumeItem{Delivered dynamic rule updating support to esp32 devices by integrating the algorithm into existing 
+				implementations of SCHC in the RIOTOS network stack.}
+				\resumeItem{Built and configuired an emulation enviromnet in a linux virtual machine which was used to stress test the algorithm under various network conditions in a controlled and reproducible manner.}
+			\resumeItemListEnd 
+
+
+	\vspace{5pt}
+	\resumeSubheading
+	{Dalhousie University - Teaching Assistant}{Halifax, NS}
+      {}{Apr. 2024 -- May. 2025}
+			\vspace{-15pt}
+      \resumeItemListStart
+				\resumeItem{Designed and deployed CI/CD piplines on GitLab via YAML scripts which are used \\ to automate the grading of lab submissions while also providing helpful error messages to aid in debugging.}
+				\resumeItem{Automated the grade retrival and assignemnet process by using Bash scripts in conjunction with the GitLaB API to fetch student grades from the CI/CD pipleline, which are then passed to my custom python script that processes the raw data into
+				a the CSV format expected by the university portal.}
+			\resumeItemListEnd 
+  \resumeSubHeadingListEnd
+
+
+
+
+
+\section{Projects}
+    \resumeSubHeadingListStart
+
+	
+	 
+			\resumeProjectHeading
+          {\textbf{Cloud Lyrics Translation} $|$ \emph{NodeJS, AWS}}{Jan. 2024 - Mar. 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and launched a SaaS webservice that provided realtime lyric translation to songs currently played on a client's Spotify account, displaying the translated lyrics on a webpage.} 
+						\resumeItem{Integrated the use of AWS serverless Lambda to query AWS Translate providing universal translation, with background
+						caching of frequently accessed lyrics in S3 buckets significantly reducing cost from repeated translations.}
+          %  \resumeItem{Manually deployed all cloud resources from the provisioning of resources to the API gateway and access control configurations ensuring fine tuned control with only the minimal resource needed being used}
+
+						\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ C/C++, Rust, Java, Python3, SQL, JavaScript, LaTex, HTMK} \\
+     \textbf{Developer Tools:}{ Git, Docker, WireShark, Makefile, AWS, GDB} \\
+     \textbf{Frameworks:}{ Flask, Nodejs, HTMX, Tailwind} \\
+    }}
+ \end{itemize}
+
+\section{Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+   
+     \textbf{Sexton Scholar:}{ Awarded each semester to students with a 3.85 or higher GPA, achieved in 10 consequitive semesters.}
+    
+    \textbf{Oman MoHE Scholarship:}{ 4 years of paid university tuition, awarded to the top performing highscool students.}
+    }}
+ \end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
+
