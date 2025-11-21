@@ -1,0 +1,202 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{4.1pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+			\textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{
+\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Anas Alhadi} \\ \vspace{1pt}
+		\vspace{5pt}
+		\small (902)-329-9923 $|$ \href{mailto:anas.n.alhadi@outlook.com}{anas.n.alhadi@outlook.com} $|$ 
+    \href{https://linkedin.com/in/anas-alhadi}{linkedin.com/in/anas-alhadi} $|$ 
+    \href{https://github.com/pthread-me}{github.com/pthread-me}
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dalhousie University}{Jan. 2021 -- May. 2025}
+      {Bachelor of Computer Science - First Class Honours, GPA: 3.93/4}
+      {Halifax, NS}
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+	\resumeSubheading
+      {John Hopkins University}{Sep. 2024 -- Nov. 2025}
+      {Bioinformatics Research Assistant (\href{https://link.springer.com/chapter/10.1007/978-3-032-05228-5_2}{\underline{Publication}})}{Remote}
+      \resumeItemListStart
+        \resumeItem{Accelerated the querying operation of KeBaB, a DNA string 
+          matching algorithm, from $60\mu s$ to $30\mu s$, by developing a 
+          skipping optimization in the core C++ engine.
+          }
+        \resumeItem{Improved CPU utilization of KeBaB's preprocessing stage by $5\%$ 
+          through the integration of intel's SIMD operations to the preprocessor's hashing functions.}
+        \resumeItem{Automated all code validation and performance profiling, 
+          significantly reducing developer workload and speeding up development 
+          cycles by approximatley $20\%$,  by developing a custom Python suite that
+          interfaces with the C++ code to perform unit and integration testing as well
+          as benchmarking and statistical analysis.}
+        \resumeItem{Delivered a complete and tested implementation of KeBaB in under 6 weeks, meeting the deadlines for the journal submission of our research paper.}
+      \resumeItemListEnd 
+
+  \resumeSubheading
+		{Dalhousie University}{Apr. 2024 -- May. 2025}
+      {IoT Research Assistant}{Halifax, NS}
+      \resumeItemListStart
+				\resumeItem{Improved compression ratios of an IoT networking protocol, SCHC, by up to 20\%, through the integration of scheduling algorithms into its rule selection scheme.}
+				\resumeItem{Delivered the improved rule updating support to esp32 devices by integrating the scheduling algorithm into existing 
+				implementations of SCHC in the RIOT-OS network stack.}
+        \resumeItem{Automated the configuration of the IoT Lilygo devices on Linux, reducing setup times to a few seconds, 
+        through the development of Bash scripts that automatically identify target devices 
+        and configure their wireless modules.}
+				\resumeItem{Configured a Linux-based emulation enviroment used to stress test the SCHC modifications, with 1500 different testing scenarios, ensuring a correct and robust implementation.}
+			\resumeItemListEnd 
+
+
+	\vspace{5pt}
+	\resumeSubheading
+	{Dalhousie University}{Aug. 2023 -- Dec. 2024}
+      {Teaching Assistant}{Halifax, NS}
+      \resumeItemListStart
+				\resumeItem{Automated the setup process of weekly labs, reducing time 
+          spent on creating and populating repositories from $5hrs$ to $10min$, by developing Bash scripts
+          that interface with the Gitlab API to perform CRUD operations on student repositories.}
+				\resumeItem{Automated the lab grading process, reducing administrative time from $2hrs$ to $30mins$, through the use of python 
+        scripts to convert grades retrived of Gitlab API from JSON format to a valid CSV format.}
+				\resumeItem{Led weekly classes for over $100+$ students, teaching concepts related to C programming, assembly instructions and discrete mathmatics.}
+			\resumeItemListEnd 
+  \resumeSubHeadingListEnd
+
+
+\section{Projects}
+    \resumeSubHeadingListStart
+			\resumeProjectHeading
+          {\textbf{Live Lyric Translation} $|$ \emph{AWS, Docker, NodeJS, Express}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and launched a SaaS web service that provided realtime lyric translation to songs currently playing on a client's Spotify account.} 
+						\resumeItem{Integrated the use of AWS Translate providing universal translation, with background
+						caching of frequently accessed lyrics in S3 buckets, significantly reducing translation costs.}
+          %  \resumeItem{Manually deployed all cloud resources from the provisioning of resources to the API gateway and access control configurations ensuring fine tuned control with only the minimal resource needed being used}
+
+						\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ C/C++, Python, Rust, Java, JavaScript, SQL, LaTeX, HTML, CSS} \\
+     \textbf{Developer Tools:}{ Git, Docker, WireShark, Makefile, AWS, GCP, GDB, Protobuf, Android Studio} \\
+     \textbf{Frameworks:}{, NodeJS, Express, React, Tailwind, CTest, JUnit, PyTest} \\
+    }}
+ \end{itemize}
+
+\section{Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Dean's List:}{ Awarded each semester to students with a high GPA; achieved in 10 semesters.}
+    
+    \textbf{Oman MoHE Scholarship:}{ 4 years of paid university tuition, awarded to the top performing high scool students.}
+    }}
+ \end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
+
